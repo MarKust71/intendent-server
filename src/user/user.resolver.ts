@@ -5,6 +5,7 @@ import { UserCreateDto } from './dto/user-create.dto';
 
 @Resolver(() => User)
 export class UserResolver {
+  // eslint-disable-next-line no-unused-vars
   constructor(private userService: UserService) {}
 
   @Query(() => [User], { name: 'getAllUsers' })
